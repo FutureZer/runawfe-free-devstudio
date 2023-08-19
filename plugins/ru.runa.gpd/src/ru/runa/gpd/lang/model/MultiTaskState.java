@@ -102,6 +102,10 @@ public class MultiTaskState extends TaskState implements IMultiInstancesContaine
     public MultiTaskSynchronizationMode getSynchronizationMode() {
         return synchronizationMode;
     }
+    
+    public boolean isMultiInstanceSequential() {
+    	return synchronizationMode.equals(MultiTaskSynchronizationMode.CONSECUTIVE);
+    }
 
     public void setSynchronizationMode(MultiTaskSynchronizationMode synchronizationMode) {
         MultiTaskSynchronizationMode old = this.synchronizationMode;

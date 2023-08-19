@@ -55,6 +55,7 @@ public interface PropertyNames {
     public static final String PROPERTY_TRANSACTIONAL = "transactional";
     public static final String PROPERTY_ASYNC_COMPLETION_MODE = "asyncCompletionMode";
     public static final String PROPERTY_MULTI_TASK_SYNCHRONIZATION_MODE = "multiTaskSynchronizationMode";
+    public static final String PROPERTY_MULTI_TASK_IS_SEQUENTIAL = "multiInstanceSequential";
     public static final String PROPERTY_MULTI_TASK_CREATION_MODE = "multiTaskCreationMode";
     public static final String PROPERTY_DISCRIMINATOR_USAGE = "discriminatorUsage";
     public static final String PROPERTY_DISCRIMINATOR_VALUE = "discriminatorValue";

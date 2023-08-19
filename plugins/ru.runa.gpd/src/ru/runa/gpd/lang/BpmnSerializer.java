@@ -398,6 +398,7 @@ public class BpmnSerializer extends ProcessSerializer {
             MultiTaskState multiTaskNode = (MultiTaskState) swimlanedNode;
             properties.put(PropertyNames.PROPERTY_MULTI_TASK_CREATION_MODE, multiTaskNode.getCreationMode().name());
             properties.put(PropertyNames.PROPERTY_MULTI_TASK_SYNCHRONIZATION_MODE, multiTaskNode.getSynchronizationMode().name());
+            properties.put(PropertyNames.PROPERTY_MULTI_TASK_IS_SEQUENTIAL, Boolean.toString(multiTaskNode.isMultiInstanceSequential()));
             properties.put(PropertyNames.PROPERTY_DISCRIMINATOR_USAGE, multiTaskNode.getDiscriminatorUsage());
             properties.put(PropertyNames.PROPERTY_DISCRIMINATOR_VALUE, multiTaskNode.getDiscriminatorValue());
             properties.put(PropertyNames.PROPERTY_DISCRIMINATOR_CONDITION, multiTaskNode.getDiscriminatorCondition());
